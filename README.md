@@ -1,0 +1,16 @@
+# Chrome extension react typescript template based on [manifest v3](https://developer.chrome.com/docs/extensions/mv3/intro/)
+## Permissions:
+- [tabs](https://developer.chrome.com/docs/extensions/reference/tabs/)
+- [storage](https://developer.chrome.com/docs/extensions/reference/storage/)
+- [webNavigation](https://developer.chrome.com/docs/extensions/reference/webNavigation/)
+- [unlimitedStorage](https://developer.chrome.com/docs/extensions/reference/unlimitedStorage/)
+## Packages:
+- [react](https://www.npmjs.com/package/react)
+- [react-dom](https://www.npmjs.com/package/react-dom)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [lodash](https://www.npmjs.com/package/lodash)
+- [dayjs](https://www.npmjs.com/package/dayjs)
+- [styled-components](https://www.npmjs.com/package/styled-components)
+- [antd](https://www.npmjs.com/package/antd)
+- [@aws-amplify/core](https://www.npmjs.com/package/@aws-amplify/core)
+- [@aws-amplify/auth](https://www.npmjs.com/package/@aws-amplify/auth)

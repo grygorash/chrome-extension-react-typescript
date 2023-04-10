@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "chrome-extension-react-typescript",
+  "description": "template",
+  "version": "0.0.1",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon32.png"
+  },
+  "icons": {
+    "16": "images/icon32.png",
+    "32": "images/icon32.png",
+    "64": "images/icon32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "content.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "images/*",
+        "fonts/*"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "<all_urls>"
+  ]
+}

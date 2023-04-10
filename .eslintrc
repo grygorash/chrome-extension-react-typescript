@@ -1,0 +1,418 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react-hooks",
+    "import",
+    "simple-import-sort",
+    "babel",
+    "react",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 120
+      }
+    ],
+    "array-bracket-newline": [
+      "error",
+      "consistent"
+    ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "block-scoped-var": "error",
+    "block-spacing": "error",
+    "brace-style": "error",
+    "camelcase": [
+      "off",
+      {
+        "properties": "never"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "consistent-return": "off",
+    "curly": [
+      "error",
+      "all"
+    ],
+    "default-case": "error",
+    "dot-notation": [
+      "error",
+      {
+        "allowKeywords": true
+      }
+    ],
+    "eol-last": "error",
+    "eqeqeq": "error",
+    "func-names": "off",
+    "guard-for-in": "off",
+    "import/no-unresolved": [
+      "off",
+      {
+        "commonjs": true,
+        "ignore": [
+          "\\.(img|png|svg)$"
+        ]
+      }
+    ],
+    "import/no-unused-modules": "error",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "TemplateLiteral"
+        ]
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "afterColon": true,
+        "beforeColon": false
+      }
+    ],
+    "keyword-spacing": "error",
+    "new-cap": [
+      "error",
+      {
+        "capIsNew": false,
+        "newIsCap": true
+      }
+    ],
+    "newline-before-return": "error",
+    "no-alert": "warn",
+    "no-caller": "error",
+    "no-cond-assign": [
+      "error",
+      "always"
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-constant-condition": "warn",
+    "no-debugger": "warn",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-else-return": "error",
+    "no-empty": "error",
+    "no-eq-null": "error",
+    "no-eval": "error",
+    "no-ex-assign": "error",
+    "no-extend-native": "error",
+    "no-extra-bind": "error",
+    "no-extra-boolean-cast": "error",
+    "no-extra-parens": [
+      "error",
+      "functions"
+    ],
+    "no-extra-semi": "off",
+    "no-fallthrough": "error",
+    "no-floating-decimal": "error",
+    "no-func-assign": "error",
+    "no-implied-eval": "error",
+    "no-inner-declarations": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-lone-blocks": "error",
+    "no-loop-func": "error",
+    "no-multi-str": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "no-multi-spaces": "error",
+    "no-native-reassign": "error",
+    "no-nested-ternary": "warn",
+    "no-new": "off",
+    "no-new-func": "error",
+    "no-new-object": "error",
+    "no-new-wrappers": "error",
+    "no-obj-calls": "error",
+    "no-param-reassign": "error",
+    "no-proto": "error",
+    "no-redeclare": "error",
+    "no-return-assign": "error",
+    "no-script-url": "error",
+    "no-self-compare": "error",
+    "no-sequences": "error",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "no-shadow-restricted-names": "error",
+    "no-spaced-func": "error",
+    "no-sparse-arrays": "off",
+    "no-throw-literal": "error",
+    "no-undef": "error",
+    "no-underscore-dangle": "off",
+    "no-unreachable": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-use-before-define": "error",
+    "no-var": "error",
+    "no-with": "error",
+    "no-whitespace-before-property": "error",
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": true,
+        "ignoreComments": true
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "operator-linebreak": [
+      "error",
+      "before"
+    ],
+    "padded-blocks": [
+      "error",
+      "never"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var",
+          "if"
+        ],
+        "next": "*"
+      },
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      }
+    ],
+    "prefer-const": "error",
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      "avoid-escape"
+    ],
+    "radix": [
+      "error",
+      "always"
+    ],
+    "react/no-multi-comp": [
+      "off",
+      {
+        "ignoreStateless": false
+      }
+    ],
+    "react/display-name": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        "props": "never",
+        "children": "never"
+      }
+    ],
+    "react/prop-types": "off",
+    "react/jsx-first-prop-new-line": [
+      2,
+      "multiline"
+    ],
+    "react/jsx-closing-bracket-location": [
+      2,
+      "line-aligned"
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "semi-spacing": [
+      "error",
+      {
+        "after": true,
+        "before": false
+      }
+    ],
+    "space-before-blocks": "error",
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "space-infix-ops": "error",
+    "spaced-comment": "error",
+    "strict": [
+      "error",
+      "never"
+    ],
+    "use-isnan": "error",
+    "vars-on-top": "error",
+    "wrap-iife": [
+      "error",
+      "any"
+    ],
+    "yoda": "error"
+  },
+  "settings": {
+    "linkComponents": [
+      "Hyperlink",
+      {
+        "linkAttribute": "to",
+        "name": "Link"
+      }
+    ],
+    "propWrapperFunctions": [
+      "forbidExtraProps",
+      {
+        "object": "Object",
+        "property": "freeze"
+      },
+      {
+        "property": "myFavoriteWrapper"
+      }
+    ],
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.js",
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "rules": {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              [
+                "^react$",
+                "^react-redux$",
+                "^react-router-dom$",
+                "^@",
+                "^lodash",
+                "^[a-z]",
+                "^antd/",
+                "^react-icons"
+              ],
+              [
+                "App",
+                "Main",
+                "serviceWorker",
+                "^routes",
+                "^components",
+                "^store",
+                "^store/selectors",
+                "^store/actions",
+                "^store/reducers",
+                "^hooks",
+                "^hocs",
+                "^api",
+                "^utils",
+                "\\w*/constants",
+                "\\w*constants",
+                "routes[A-z+\\/]*styled",
+                "components[A-z+\\/]*styled",
+                "^types",
+                "^[A-z+\\/]*types",
+                "\\w*Styled",
+                "utils/icons",
+                "assets/",
+                "assets[A-z+\\/].+.(png|jpg|jpeg|svg)",
+                "^.+\\.s?css$"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

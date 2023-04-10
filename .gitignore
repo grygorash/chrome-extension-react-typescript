@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+.idea
+yarn.lock
+src/assets/tailwind.css
+.yarn
+.yarnrc.yml
+
+# production
+/build
+
+yarn-debug.log*
+yarn-error.log*
